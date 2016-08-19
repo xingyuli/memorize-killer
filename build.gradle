@@ -1,0 +1,24 @@
+group 'org.swordess.toy'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.0.3'
+
+    repositories {
+        maven { url "http://repo.mobisist.com/repository/maven-public/" }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    maven { url "http://repo.mobisist.com/repository/maven-public/" }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "com.google.http-client:google-http-client-jackson2:1.20.0"
+}
