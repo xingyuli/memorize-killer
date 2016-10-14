@@ -5,7 +5,7 @@ buildscript {
     ext.kotlin_version = '1.0.3'
 
     repositories {
-        maven { url "http://repo.mobisist.com/repository/maven-public/" }
+        maven { url "http://artifactory.mobisist.com/artifactory/libs-all" }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -15,7 +15,7 @@ buildscript {
 apply plugin: 'kotlin'
 
 repositories {
-    maven { url "http://repo.mobisist.com/repository/maven-public/" }
+    maven { url "http://artifactory.mobisist.com/artifactory/libs-all" }
 }
 
 dependencies {
